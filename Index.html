@@ -6,59 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
-        crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="background">
-        <div class="container">
-            <div class="header">
-                <h2 class="">REGISTRATION FORM</h2>
-            </div>
-            <form action="" class="form">
-                <div class="form-control">
-                    <label for="">Username </label>
-                    <input type="text" name="" id="username" placeholder="Enter Your Username">
-                    <span class="span"><i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation"></i>
-                        <small>Error</small></span>
-                </div>
-                <div class="form-control">
-                    <label for="">Email </label>
-                    <input type="email" name="" id="email" placeholder="Enter Your Email">
-                    <span class="span"><i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation"></i>
-                        <small>Message Error</small></span>
-                </div>
-                <div class="form-control">
-                    <label for="">Phone </label>
-                    <input type="number" name="" id="phone" placeholder="Enter Your Phone">
-                    <span class="span"><i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation"></i>
-                        <small>Message Error</small></span>
-                </div>
-                <div class="form-control">
-                    <label for="">Password </label>
-                    <input type="text" name="" id="password" placeholder="Enter Your Password">
-                    <span class="span"><i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation"></i>
-                        <small>Message Error</small></span>
-                </div>
-                <div class="form-control">
-                    <label for="">Confirmation Password </label>
-                    <input type="text" name="" id="cPassword" placeholder="Enter Your Password again">
-                    <span class="span"><i class="fas fa-check-circle"></i>
-                        <i class="fas fa-exclamation"></i>
-                        <small>Message Error</small></span>
-                </div>
-                <input type="submit" value="Submit" class="btn" name="">
 
-            </form>
-        </div>
+    <div class="container">
+        <form id="login" class="form">
+            <h1 class="form-title">Login</h1>
+            <div class="form-message form-message-error">
+
+            </div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus placeholder="Username/Email">
+                <div class="form-input-error-message">This is an error message</div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password">
+                <div class="form-input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit">Continue</button>
+            <p class="form-text">
+                <a href="#" class="form-link">Forgot Password?</a>
+            </p>
+            <p class="form-text">
+                <a href="#" id="linkCreateAccount" class="form-link">Wanna create new account?</a>
+            </p>
+        </form>
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
