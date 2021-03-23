@@ -5,9 +5,9 @@
 }
 
 body {
-  --color-primary: #7e2736;
-  --color-primary-dark: #42141c;
-  --color-secondary: #282a36;
+  --color-primary: #4a0274;
+  --color-primary-dark: #44004a;
+  --color-secondary: #005464;
   --color-error: #cc3333;
   --color-success: #4bb544;
   --border-radius: 4px;
@@ -16,7 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  background: var(--color-primary);
+  background: url("./Images/724236.jpg");
   background-size: cover;
 }
 
