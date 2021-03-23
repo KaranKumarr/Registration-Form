@@ -18,8 +18,8 @@
 
             </div>
             <div class="form-input-group">
-                <input type="text" class="form-input" autofocus placeholder="Username/Email">
-                <div class="form-input-error-message">This is an error message</div>
+                <input type="text" class="form-input" autofocus id="username" placeholder="Username/Email">
+                <div class="form-input-error-message"></div>
             </div>
             <div class="form-input-group">
                 <input type="password" class="form-input" autofocus placeholder="Password">
@@ -31,6 +31,34 @@
             </p>
             <p class="form-text">
                 <a href="#" id="linkCreateAccount" class="form-link">Wanna create new account?</a>
+            </p>
+        </form>
+        <form id="createAccount" class="form  form-hidden">
+            <h1 class="form-title">Login</h1>
+            <div class="form-message form-message-error">
+
+            </div>
+            <div class="form-input-group">
+                <input type="text" class="form-input" autofocus id="username" placeholder="Username">
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="email" class="form-input" autofocus placeholder="Email">
+                <div class="form-input-error-message"></div>
+            </div>
+
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Password">
+                <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+                <input type="password" class="form-input" autofocus placeholder="Confirm Password">
+                <div class="form-input-error-message"></div>
+            </div>
+            <button class="form-button" type="submit">Continue</button>
+
+            <p class="form-text">
+                <a href="#" id="linkLogin" class="form-link">Already Have An Account?</a>
             </p>
         </form>
     </div>
