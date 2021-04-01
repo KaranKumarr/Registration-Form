@@ -22,7 +22,9 @@
                 <div class="form-input-error-message"></div>
             </div>
             <div class="form-input-group">
-                <input type="password" class="form-input" autofocus placeholder="Password">
+                <input type="password" class="form-input" autofocus placeholder="Password"
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                    title="Password should include a number, a capital letter and a length of 8">
                 <div class="form-input-error-message"></div>
             </div>
             <button class="form-button" type="submit">Continue</button>
@@ -34,7 +36,7 @@
             </p>
         </form>
         <form id="createAccount" class="form  form-hidden">
-            <h1 class="form-title">Login</h1>
+            <h1 class="form-title">Create New Account</h1>
             <div class="form-message form-message-error">
 
             </div>
@@ -48,11 +50,15 @@
             </div>
 
             <div class="form-input-group">
-                <input type="password" class="form-input" autofocus placeholder="Password">
+                <input type="password" class="form-input" autofocus placeholder="Password"
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                    title="Password should include a number, a capital letter and a length of 8">
                 <div class="form-input-error-message"></div>
             </div>
             <div class="form-input-group">
-                <input type="password" class="form-input" autofocus placeholder="Confirm Password">
+                <input type="password" class="form-input" autofocus placeholder="Confirm Password"
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                    title="Password should include a number, a capital letter and a length of 8">
                 <div class="form-input-error-message"></div>
             </div>
             <button class="form-button" type="submit">Continue</button>

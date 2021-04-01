@@ -1,18 +1,16 @@
-
-function setFormMessage(formElement, type, message) {
+const setFormMessage = (formElement, type, message) => {
     const messageElement = formElement.querySelector('.form-message');
     messageElement.textContent = message;
     messageElement.classList.remove('form-message-success', 'form-message-error');
     messageElement.classList.add(type);
 
-
 }
 
-function setInputError(inputElement, message) {
+const setInputError = (inputElement, message) => {
     inputElement.classList.add("form-input-error");
     inputElement.parentElement.querySelector('.form-input-error-message').textContent = message;
 }
-function clearInputError(inputElement) {
+const clearInputError = (inputElement) => {
     inputElement.classList.remove("form-input-error");
 
     inputElement.parentElement.querySelector('.form-input-error-message').textContent = "";
@@ -50,7 +48,5 @@ document.addEventListener("DOMContentLoaded", () => {
             clearInputError(inputElement)
         });
     });
-
-
 
 });
